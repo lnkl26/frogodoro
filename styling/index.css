@@ -1,0 +1,123 @@
+body {
+    background-image: url("assets/frogodoro_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+body,
+button {
+    font-family: "ZCOOL Qingke HuangYou", sans-serif;
+}
+
+.timer-btns {
+    display: flex;
+    justify-content: center;
+    max-width: 700px;
+    position: relative;
+    top: 200px;
+    display: none;
+}
+
+button {
+    font-size: 3rem;
+    width: 100%;
+    max-width: 200px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* image absolute */
+/* containers relative */
+
+.frogodoro {
+    position: relative;
+}
+
+.lilypad {
+    object-fit: contain;
+}
+
+/* .frog {
+    border: 5px solid pink;
+} */
+
+.time {
+    position: relative;
+    text-align: center;
+    object-fit: contain;
+    width: 100%;
+    max-width: 700px;
+    top: 500px;
+}
+
+.time h1 {
+    font-size: 5rem;
+}
+
+.lilypad img,
+.frog img {
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    max-width: 700px;
+}
+
+.tasklist {
+    display: none;
+    position: relative;
+    background: #eee;
+    border-radius: 15px;
+    padding: 1vw 3vw;
+    max-width: 700px;
+    margin: 5vw;
+    top: 800px;
+    min-height: 300px;
+}
+
+.tasklist-header {
+    display: flex;
+    border-bottom: 3px solid lightblue;
+}
+
+#addTask {
+    border: none;
+    background: none;
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.pomodoro-settings {
+    display: none;
+    background: gray;
+}
+
+.presents {
+    /* display: flex; */
+    justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+    .lilypad img,
+    .frog img {
+        left: 0px;
+    }
+
+    .time {
+        top: 225px;
+    }
+
+    .time h1 {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .tasklist {
+        top: 0;
+        left: 700px;
+        min-height: 300px;
+    }
+}

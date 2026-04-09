@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frogodoro</title>
+    <link rel="stylesheet" href="styling/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Joti+One&family=ZCOOL+QingKe+HuangYou&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="frogodoro">
+        <div class="timer-btns">
+            <button id="startBtn">start</button>
+            <button>settings</button>
+        </div>
+        <div class="lilypad">
+            <img src="styling/assets/frogodoro_lilypad.png">
+            <div class="frog">
+                <img src="styling/assets/frogodoro_frog.png">
+                <div class="time" id="timeFace">
+                    <h1>00:00</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tasklist">
+        <div class="tasklist-header">
+            <h2>my tasks</h2>
+            <button id="addTask"><img src="styling/assets/icons/add_black.png"></button>
+        </div>
+        <div class="task"></div>
+    </div>
+    <div class="pomodoro-settings">
+        <div class="presets">
+            <button>15/5</button>
+            <button>30/5</button>
+            <button>60/15</button>
+        </div>
+        <div class="sound-settings">
+            <div class="volume-slider">
+                <input type="range">
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
