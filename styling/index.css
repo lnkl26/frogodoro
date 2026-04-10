@@ -16,7 +16,7 @@ button {
     max-width: 700px;
     position: relative;
     top: 200px;
-    display: none;
+    /* display: none; */
 }
 
 button {
@@ -51,9 +51,6 @@ button:hover {
     width: 100%;
     max-width: 700px;
     top: 500px;
-}
-
-.time h1 {
     font-size: 5rem;
 }
 
